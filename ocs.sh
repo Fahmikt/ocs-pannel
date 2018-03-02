@@ -1,8 +1,14 @@
 #!/bin/bash
 
-if [ $USER != 'root' ]; then
-	echo "Anda harus menjalankan ini sebagai root"
+if [[ $USER != 'root' ]]; then
+	echo "Maaf, Anda harus menjalankan ini sebagai root"
 	exit
+fi
+
+MYIP=$(wget -qO- ipv4.icanhazip.com)
+
+
+clear
 fi
 
 # initialisasi var
