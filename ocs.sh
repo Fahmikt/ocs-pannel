@@ -28,15 +28,8 @@ fi
 # go to root
 cd
 
-MYIP=$(wget -qO- ipv4.icanhazip.com);
-	echo "Maaf, hanya IP yang terdaftar yang bisa menggunakan script ini!"
-	if [[ $vps = "FNS" ]]; then
-		echo "Powered by overses.net"
-	else
-		echo "Powered by overses.net"
-	fi
-	rm -f /root/daftarip
-	exit
+MYIP=$(wget -qO- ipv4.icanhazip.com)
+
 fi
 
 #https://github.com/adenvt/OcsPanels/wiki/tutor-debian
